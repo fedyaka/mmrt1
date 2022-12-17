@@ -32,7 +32,7 @@ public class DictionaryNumber extends Dictionary<String, String>{
     private Integer checkEntryRules(String wordTested) throws IllegalArgumentException{
         Integer intWordTested = stringToInteger(wordTested);
 
-        if (intWordTested < 100000 && intWordTested > -1){
+        if (intWordTested < 100000 && intWordTested >= 10000){
             return intWordTested;
         }
         throw new IllegalArgumentException("Введи число по правилам, будь человеком :)");
@@ -42,7 +42,7 @@ public class DictionaryNumber extends Dictionary<String, String>{
         try {
            return Integer.parseInt(line);
         } catch (NumberFormatException e){
-            throw new IllegalArgumentException("оу, а это не число");
+            throw new IllegalArgumentException("Оу, а это не число");
         }
     }
 }

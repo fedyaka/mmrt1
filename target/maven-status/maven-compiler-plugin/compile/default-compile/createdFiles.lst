@@ -1,0 +1,6 @@
+org\example\Dictionary.class
+org\example\DictionaryLatin.class
+org\example\service\DictionaryService.class
+org\example\DictionaryNumber.class
+org\example\config\AppConfig.class
+org\example\Starter.class
